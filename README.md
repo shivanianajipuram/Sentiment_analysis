@@ -109,7 +109,7 @@ streamlit run app.py
 ---
 ## live demo 
 ```bash
-https://github.com/shivanianajipuram/Sentiment_analysis
+https://sentiment-analysis-i1cq.onrender.com/
 ```
 # Technologies Used
 
