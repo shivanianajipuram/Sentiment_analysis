@@ -110,11 +110,64 @@ pip install -r requirements.txt
 streamlit run app.py
 ```
 
+## Important Note – Dataset Column Issue
+
+If you are not downloading the dataset from Kaggle and directly using the `dataset.csv` from this repository, please check the column name before running the project.
+
+Sometimes the review column may appear as:
+
+```csv
+-review
+```
+
+instead of:
+
+```csv
+review
+```
+
+Because of this, you may get this error:
+
+```bash
+KeyError: 'review'
+```
+
+### Method 1 – Rename column manually
+
+Open `dataset.csv` and change:
+
+```csv
+-review
+```
+
+to:
+
+```csv
+review
+```
+
+Then run the project again.
+If it doesn't work
+
+### Method 2 – Download dataset from Kaggle and replace it with the dataset.csv in current folder
+
+You can also download the original dataset from the Kaggle link provided in this repository and replace the existing `dataset.csv`.
+
+Then run:
+
+```bash
+python train.py
+python app.py
+```
+
+After that the project should work correctly.
 ---
 ## live demo 
 ```bash
 https://sentiment-analysis-i1cq.onrender.com/
 ```
+
+
 # Technologies Used
 
 - Python
