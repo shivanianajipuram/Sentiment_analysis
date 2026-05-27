@@ -13,6 +13,10 @@ The project uses the IMDb Movie Reviews Dataset for training the sentiment class
 https://www.kaggle.com/datasets/lakshmi25npathi/imdb-dataset-of-50k-movie-reviews
 ```
 
+## Accuracy
+```bash
+85%
+```
 Dataset contains:
 - Movie reviews
 - Sentiment labels (Positive / Negative)
